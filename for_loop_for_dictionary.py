@@ -1,7 +1,7 @@
 # for loop for Dictionary
 
-d = {'Sam': 1, "Frank": 2, "Dan": 3}
+dicts = {'Sam': 1, "Frank": 2, "Dan": 3}
 
-for k in d:
-    print(k)
-    print(d[k])
+for count in dicts:
+    print(f"Count {count} ")
+    print(f"From Dictionary {dicts[count]}")
