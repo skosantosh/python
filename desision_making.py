@@ -55,6 +55,8 @@ else:
     eat = "prune juice"
 print("Have a " + eat)
 
+# for loop and if ealse conditions
+
 available_toppings = ['musroom', 'olives', 'pineapple', 'extra cheese',
                       'green peppers', 'pepperoni']
 request_toppings = ['musroom', 'french fries', 'extra cheese']

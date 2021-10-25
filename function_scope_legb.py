@@ -52,7 +52,7 @@ b = 50
 
 
 def func():
-    global b  # for test commetn this line look the out put.
+    global b  # for test commet this line look the out put.
     b = 5000
 
 

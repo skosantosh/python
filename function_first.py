@@ -1,3 +1,4 @@
+# comment inside the function
 def my_func(param1='default'):
     """
         This is fisrt func
