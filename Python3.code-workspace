@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "AIO Python"
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Visual Studio Light",
+		"python.pythonPath": "C:\\Users\\skosa\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+		"python.linting.pycodestyleEnabled": true,
+	}
+}
