@@ -1,51 +1,51 @@
-SUITE = 'H D S C'.split()
-RANKS = '2 3 4 5 6 7 8 9 10 J K A'.split()
+from random import shuffle
+
+SUITES = 'H D S C'.split()
+RANKS = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
+
 
 # mycards = [(s, r) for s in SUITE for r in RANKS]
 
 # we can write like this too
-"""
-mycards = []
-for r in RANKS:
-    for s in SUITE:
-        mycards.append(s, r)
-"""
 
 
 class Deck:
     """ This is Deck Class. This object will create a deck of cards to
-        initiate play. """
+    initiate play. """
     def __init__(self):
         print("Creating new Ordered Deck!")
-        mycards = []
+        self.allcard = []
 
-        for r in RANKS:
-            for s in SUITE:
-                mycards.append(s, r)
+        for s in SUITES:
+            for r in RANKS:
+                allcard.apppend(s, r)
 
-        return mycards
-        self.allcards = mycards
-
-        def shuffle(self):
-            print("SHUFFLING DECK")
-            shuffle.allcard
+        def shufflecard(self):
+            print("Shuffling Deck")
+            shuffle(self.allcard)
 
         def split_in_half(self):
             return (self.allcards[:26], self.allcards[26:])
 
-    class Hand:
-        """ This is a habd class. Each playesrs has hands"""
-        def __init__(self, cards):
-            self.cards = cards
 
-        def __str__(self):
-            return "Contains {} cards".format()(len(self.cards))
+d = Deck()
 
-        def add(self, added_cards):
-            self.cards.extend(added_cards)
+print("Deck" + d)
 
-        def remove_card(self):
-            return self.cords.pop()
+
+class Hand:
+    """ This is a habd class. Each playesrs has hands"""
+    def __init__(self, cards):
+        self.cards = cards
+
+    def __str__(self):
+        return "Contains {} cards".format()(len(self.cards))
+
+    def add(self, added_cards):
+        self.cards.extend(added_cards)
+
+    def remove_card(self):
+        return self.cords.pop()
 
 
 class Player:
@@ -76,7 +76,3 @@ class Player:
         return len(self.hand.cards) != 0
 
     print("Welcome to war, let's begin...")
-
-    d = Deck()
-    d.shaffle()
-    half1, half2 = d.split_in_half()
