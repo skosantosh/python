@@ -18,7 +18,7 @@ class Deck:
 
         for s in SUITES:
             for r in RANKS:
-                allcard.apppend(s, r)
+                self.allcard.append((s, r))
 
         def shufflecard(self):
             print("Shuffling Deck")
@@ -30,7 +30,7 @@ class Deck:
 
 d = Deck()
 
-print("Deck" + d)
+print(f"Deck {d.allcard}")
 
 
 class Hand:
